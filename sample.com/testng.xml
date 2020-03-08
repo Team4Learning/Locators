@@ -3,8 +3,11 @@
 	<test name="module1" preserve-order="true">
 		<classes>
 			<!-- <class name="sample.sample.com.TestA" /> -->
-			<class name="sample.sample.com.TestB" />
+			<!-- <class name="sample.sample.com.TestB" />
+ -->
+			<!-- <class name="sample.sample.com.TestC" /> -->
 
+			<class name="sample.sample.com.LocateById" />
 		</classes>
 	</test>
 </suite>

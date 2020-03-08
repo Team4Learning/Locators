@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-// Scenario: Verify that notification icon is displayed on yahoo home page
+// Scenario: Verify that, notification icon is displayed on yahoo home page
 public class TestB {
 
 	public WebDriver driver;
@@ -24,10 +24,12 @@ public class TestB {
 
 	}
 
+	 
 	@Test
-	public void search() {
+	public void search() throws InterruptedException {
 
 		WebElement ele = driver.findElement(By.xpath("//button[@title = 'Notifications']"));
+		Thread.sleep(10000);
 
 		/*if (ele.isDisplayed()) {
 
@@ -44,7 +46,7 @@ public class TestB {
 	@AfterTest
 	public void testB() {
 
-		driver.close();
+		driver.quit();
 
 	}
 }
