@@ -47,6 +47,7 @@ public class LocateById {
 		// The contains method for tag value using Text() method
 		WebElement ele3 = driver.findElement(By.xpath("//a[contains(text(),'Sign in')]"));
 
+		ele3.getTagName();
 		Thread.sleep(2000);
 
 		// The contains method for locating element using attribute value
